@@ -1,3 +1,18 @@
+import styled from "styled-components";
+import Timeline from "../components/timeline";
+import PostTweetForm from "../components/post-tweet-form";
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+`;
+
 export default function Home() {
-  return <h1>Home!</h1>;
+  return (
+    <Wrapper>
+      <PostTweetForm />
+      <Timeline />
+    </Wrapper>
+  );
 }
